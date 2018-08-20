@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <div class="dataInfo">
+            <a href="https://habitica.com/user/settings/api">❓</a>
+            <input type="text" name="UserID" placeholder="UserID" id="UserID_Input_Field">
+            <input type="text" name="APIToken" placeholder="APIToken" id="APIToken_Input_Field">
+            <input type="text" name="FilterKeyword" placeholder="Filter Keyword" id="FilterKeyword">
+            <button type="button" id="savePreferencesButton">Save Preferences</button>
+        </div>
+        <button style="display:none;">⚙️</button>
+    </header>
+    <div class="wrapper">
+        <div id="main-form">
+            <form id="form-input">
+                <input type="text" name="input" placeholder="TODO">
+                <button type="submit">+</button>
+            </form>
+        </div>
+        <div class="main">
+            <ul id="list">
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
