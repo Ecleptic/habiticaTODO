@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', async () => {
     const mainForm = document.querySelector('#main-form')
     const form = document.querySelector('form')
@@ -9,6 +8,16 @@ document.addEventListener('DOMContentLoaded', async () => {
     const savePreferencesButton = document.querySelector(
         '#savePreferencesButton'
     )
+
+    document.querySelector('#showInfoButton').addEventListener('click', e => {
+        e.preventDefault
+        const dataInfoDiv = document.querySelector('#dataInfoDiv')
+        if (dataInfoDiv.style.display === 'none') {
+            dataInfoDiv.style.display = 'block'
+        } else {
+            dataInfoDiv.style.display = 'none'
+        }
+    })
 
     const UserID = document.querySelector('#UserID_Input_Field')
     const APIToken = document.querySelector('#APIToken_Input_Field')
@@ -101,9 +110,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(tasksList)
 
         const createListContent = (text, id) => {
-            const span = document.createElement('span')
+            const span = document.createElement('label')
             const li = document.createElement('li')
             span.textContent = text
+            span.htmlFor = id
             li.appendChild(span)
             ul.appendChild(li)
             createButtons(li, id)

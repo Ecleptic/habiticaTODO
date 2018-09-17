@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: #598392;
+    /* background: #598392; */
+    background-color: rgb(25, 26, 29);
 }
 
 .wrapper {
@@ -32,22 +33,25 @@ form input[type='text'] {
     font-size: 1.25em;
     outline: none;
     border: none;
-    border-radius: 5px 0 0 5px;
+    /* border-radius: 5px 0 0 5px; */
     flex: 90%;
-    background: #eff6e0;
+    /* background: #eff6e0; */
+    background-color: rgb(50, 51, 59);
+    color: white;
 }
 
 form button {
-    border-radius: 0 5px 5px 0;
+    /* border-radius: 0 5px 5px 0; */
     border: none;
-    background: #eff6e0;
+    /* background: #eff6e0; */
+    background-color: rgb(50, 51, 59);
+
     color: #bebebe;
     font-size: 1.4em;
     font-weight: bold;
     padding-right: 15px;
     padding-left: 15px;
 }
-
 
 ul {
     margin: auto;
@@ -59,19 +63,21 @@ ul {
 
 ul li {
     list-style: none;
-    background: #eff6e0;
+    /* background: #eff6e0; */
+    background-color: rgb(50, 51, 59);
+    color: white;
     font-size: 1.1em;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-left: 8px solid #aec3b0;
+    border-left: 8px solid #bebebe;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
-li span {
-    padding-left: 10px;
+li label {
+    padding-left: 40px;
     padding-right: 10px;
     flex: 1;
 }
@@ -79,6 +85,27 @@ li span {
 li input[type='checkbox'] {
     margin-left: 10px;
     margin-right: 0;
+}
+input[type='checkbox'] {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #787878;
+    border-radius: 3px;
+    margin-left: -29px;
+    box-sizing: border-box;
+}
+
+input[type='checkbox'] ::before {
+    background-color: #bebebe;
+    border-color: #bebebe;
+}
+input[type='checkbox'] ::after {
+    width: 8px;
+    height: 14px;
+    transform: translate(7px, 2px) rotate(45deg);
 }
 
 .remove {
@@ -101,7 +128,7 @@ form button:hover,
     opacity: 0.8;
 }
 
-.checked span {
+.checked label {
     text-decoration: line-through;
     color: #124559;
 }
@@ -144,4 +171,23 @@ header {
 }
 .dataInfo > * {
     margin-right: 20px;
+}
+
+#dataInfoHelpLink {
+    background: none;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#showInfoButton {
+    font-size: 1rem;
+    background: none;
+    border: none;
+}
+#savePreferencesButton {
+    background-color: rgb(25, 26, 29);
+    color: white;
+    border-color: white;
+    font-size: 1rem;
+    cursor: pointer;
 }

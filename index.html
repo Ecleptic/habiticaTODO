@@ -13,14 +13,14 @@
 
 <body>
     <header>
-        <div class="dataInfo">
-            <a href="https://habitica.com/user/settings/api">❓</a>
+        <div class="dataInfo" id="dataInfoDiv" style="display: none;">
+            <a id="dataInfoHelpLink" href="https://habitica.com/user/settings/api">❓</a>
             <input type="text" name="UserID" placeholder="UserID" id="UserID_Input_Field">
             <input type="text" name="APIToken" placeholder="APIToken" id="APIToken_Input_Field">
             <input type="text" name="FilterKeyword" placeholder="Filter Keyword" id="FilterKeyword">
             <button type="button" id="savePreferencesButton">Save Preferences</button>
         </div>
-        <button style="display:none;">⚙️</button>
+        <button id="showInfoButton">⚙️</button>
     </header>
     <div class="wrapper">
         <div id="main-form">
