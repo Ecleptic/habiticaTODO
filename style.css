@@ -6,8 +6,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    /* background: #598392; */
-    background-color: rgb(25, 26, 29);
+    background-color: #191a1d;
 }
 
 .wrapper {
@@ -18,7 +17,7 @@ body {
 #main-form {
     margin: auto;
     margin-top: 20px;
-    color: rgb(209, 60, 60);
+    /* color: #d13c3c; */
     font-weight: bold;
     overflow: hidden;
 }
@@ -36,7 +35,7 @@ form input[type='text'] {
     /* border-radius: 5px 0 0 5px; */
     flex: 90%;
     /* background: #eff6e0; */
-    background-color: rgb(50, 51, 59);
+    background-color: #32333b;
     color: white;
 }
 
